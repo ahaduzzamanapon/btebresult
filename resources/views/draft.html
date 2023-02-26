@@ -1,0 +1,13 @@
+Route::get('/forthcst', [forthcst::class, 'forthcstd']);
+Route::get('/forthcstmanage', [forthcst::class, 'forthcstmanage']);
+Route::get('/forthcstpdf', [forthcst::class, 'forthcstpdf']);
+Route::get('/forthcstfees', [forthcst::class, 'forthcstfees']);
+Route::post('/forthcstfeesi', [forthcst::class, 'forthcstfeesi']);
+Route::post('/forthcstpdfi', [forthcst::class, 'forthcstpdfi']);
+Route::get('/editforthcst/{roll}', [forthcst::class, 'edit']);
+Route::post('/editforthcstresult/{roll}', [forthcst::class, 'editforthcstresult']);
+Route::get('/delletforthcstdata/{roll}', [forthcst::class, 'delletforthcstdata']);
+Route::get('/forthcstmanual', [forthcst::class, 'forthcstmanual']);
+Route::post('/forthcstresultmanual', [forthcst::class, 'forthcstresultmanual']);
+Route::get('/downloadmid/{file}', [forthcst::class, 'downloadmid']);
+Route::get('/downloadadmit/{file}', [forthcst::class, 'downloadadmit']);
